@@ -69,6 +69,7 @@ app.get("/cars", async (req, res) => {
     model: item.mmod,
     year: item.lcy,
     title: item.tgd,
+    link: `https://www.copart.com/lot/${item.lotNumberStr}`,
   }));
 
   res.json(carData);
